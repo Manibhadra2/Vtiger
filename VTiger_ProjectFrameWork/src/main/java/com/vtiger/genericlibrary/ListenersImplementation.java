@@ -28,7 +28,7 @@ public class ListenersImplementation implements ITestListener {
 		System.out.println("--------- || Execution of :" + result.getName() + " || failed---------");
 		TakesScreenshot ts = (TakesScreenshot) BaseTest.listenersDriver;
 		File src = ts.getScreenshotAs(OutputType.FILE);
-		File tgt = new File("./FailedScreenshot/" + result.getName() + ".png");
+		File tgt = new File("./Screenshot/" + result.getName() + ".png");
 		try {
 			FileHandler.copy(src, tgt);
 		} catch (IOException e) {

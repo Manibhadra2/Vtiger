@@ -47,4 +47,10 @@ public class HomePage {
 		return organizationLink;
 	}
 	
+	/* name convention 
+	 * Pom classes name ---> Web Page name
+	 * WebELement ---> 
+	 * */
+	
+	
 }
