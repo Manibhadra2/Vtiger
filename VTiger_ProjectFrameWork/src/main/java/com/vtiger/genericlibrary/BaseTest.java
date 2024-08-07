@@ -71,21 +71,21 @@ public class BaseTest {
 		home_Page = new HomePage(driver);
 	}
 
-	@AfterMethod(alwaysRun = true)
-	public void performLogout() {
-		webDriver_Utility.mouseOveronElement(driver, home_Page.getUserAccountImage());
-		home_Page.getSignOutLink().click();
-	
-	}
-
-	@AfterClass(alwaysRun = true)
-	public void closeTheBrowser() {
-		driver.quit();
-	}
-	
-	
-	@AfterSuite
-	public void reportClosure() {
-		reports.flush();
-	}
+//	@AfterMethod(alwaysRun = true)
+//	public void performLogout() {
+//		webDriver_Utility.mouseOveronElement(driver, home_Page.getUserAccountImage());
+//		home_Page.getSignOutLink().click();
+//	
+//	}
+//
+//	@AfterClass(alwaysRun = true)
+//	public void closeTheBrowser() {
+//		driver.quit();
+//	}
+//	
+//	
+//	@AfterSuite
+//	public void reportClosure() {
+//		reports.flush();
+//	}
 }

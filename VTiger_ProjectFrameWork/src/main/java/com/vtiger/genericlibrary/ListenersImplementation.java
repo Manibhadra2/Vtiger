@@ -13,17 +13,17 @@ import org.testng.ITestResult;
  * @author [Rakesh B]
  */
 public class ListenersImplementation implements ITestListener {
-	@Override
+	
 	public void onTestStart(ITestResult result) {
 		System.out.println("--------- || Execution of :" + result.getName() + " || Started---------");
 	}
 
-	@Override
+	
 	public void onTestSuccess(ITestResult result) {
 		System.out.println("--------- || Execution of :" + result.getName() + " || Success---------");
 	}
 
-	@Override
+	
 	public void onTestFailure(ITestResult result) {
 		System.out.println("--------- || Execution of :" + result.getName() + " || failed---------");
 		TakesScreenshot ts = (TakesScreenshot) BaseTest.listenersDriver;
