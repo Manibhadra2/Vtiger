@@ -87,7 +87,9 @@ public class VT_Contact_002 extends BaseTest{
 			c.getDescription().sendKeys("its is huge amount");
 			
 			
-			driver.findElement(By.xpath("//input[@type='file']")).sendKeys("C:\\Users\\manib\\OneDrive\\Desktop\\120-personal-resume.docx");
+			c.getChoose_file().sendKeys("C:\\Users\\manib\\OneDrive\\Desktop\\P9.java");
+			
+			c.getSave().click();
 		}	
 		
 	}
